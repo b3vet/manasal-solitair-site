@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gizlilik Politikası — Manasal Solitaire</title>
+<!--
+  Bu politika koda göre doğrulandı (2026-11-10, v1.3.1): WEB sürümü hiçbir veri
+  toplamaz; MOBİL (iOS/Android) uygulama kimlikle ilişkilendirilmeyen
+  kullanım/çökme istatistikleri toplar (Firebase Analytics + Crashlytics;
+  uygulama-örneği kimliği/IDFV, IDFA yok), Ayarlar'dan kapatılabilir.
+-->
+<style>
+  :root{
+    --bg:#F4E9D7; --surface:#FFFCF3; --ink:#342519; --ink-soft:#6B573F;
+    --accent:#B14E24; --line:#E0D0B2;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#1A120D; --surface:#2C211A; --ink:#F0E9D8; --ink-soft:#A8917A;
+      --accent:#DD7E4B; --line:#433C2E; }
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    background:var(--bg);color:var(--ink);line-height:1.7;padding:0 20px 80px}
+  main{max-width:760px;margin:0 auto}
+  header{padding:56px 0 20px;border-bottom:3px solid var(--accent);margin-bottom:8px}
+  h1{font-family:Georgia,serif;font-size:2rem;letter-spacing:-.3px}
+  .updated{color:var(--ink-soft);font-size:.9rem;margin-top:6px}
+  h2{font-family:Georgia,serif;font-size:1.25rem;margin:32px 0 8px}
+  p,li{color:var(--ink);font-size:1rem}
+  p{margin:8px 0}
+  ul{margin:8px 0 8px 22px}
+  .soft{color:var(--ink-soft)}
+  .box{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:14px 0}
+  a{color:var(--accent)}
+  footer{margin-top:40px;color:var(--ink-soft);font-size:.9rem}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <h1>Gizlilik Politikası</h1>
+  <div class="updated">Manasal Solitaire · Son güncelleme: 10 Kasım 2026</div>
+</header>
+
+<p>Bu politika, <strong>Manasal Solitaire</strong> uygulamasının verilerinizle
+ilişkisini açıklar. Kısacası: <strong>hesap yoktur; adınız, e-postanız, telefon
+numaranız veya hassas konumunuz toplanmaz.</strong> Tarayıcı (web) sürümü hiçbir
+veri toplamaz; mobil uygulama yalnızca kimliğinizle ilişkilendirilmeyen
+<strong>kullanım ve çökme istatistikleri</strong> toplar ve bunu
+<strong>kapatabilirsiniz</strong>.</p>
+
+<h2>1. Cihazınızda yerel kalan veriler</h2>
+<div class="box">
+  <p>Oyun ilerlemeniz (tamamlanan bölümler, yıldızlar, krediler, başarımlar),
+  günlük bulmaca seriniz, ayarlarınız (ses, titreşim, hareket, tema) ve devam
+  kaydınız <strong>yalnızca cihazınızda yerel olarak</strong> saklanır (cihaz
+  depolaması / SharedPreferences). Bu veriler bir sunucuya gönderilmez,
+  hesabınız yoktur.</p>
+</div>
+
+<h2>2. Kullanım istatistikleri ve çökme raporu <span class="soft">(mobil, kapatılabilir)</span></h2>
+<p>Mobil uygulama (iOS/Android), oyunu iyileştirmek için Google
+<strong>Firebase Analytics</strong> ve <strong>Firebase Crashlytics</strong>
+kullanır. Bu veriler adınızla, e-postanızla veya herhangi bir hesapla
+ilişkilendirilmez; reklam veya izleme (tracking) amacıyla kullanılmaz.</p>
+<ul>
+  <li><strong>Oyun içi etkileşim:</strong> bölüm başlatma/tamamlama/kaybetme
+  (bölüm numarası, oyun modu, kullanılan hamle, yıldız, ilk denemede mi,
+  kaybetme nedeni), ipucu ve geri-al kullanımı.</li>
+  <li><strong>Otomatik ölçümler (Firebase Analytics):</strong> ilk açılış,
+  oturum ve ekran görüntüleme olayları, uygulama/işletim sistemi sürümü, cihaz
+  modeli, dil ve IP adresinden kabaca türetilen ülke/bölge (IP adresinin
+  kendisi saklanmaz).</li>
+  <li><strong>Çökme ve tanılama (Crashlytics):</strong> uygulama çöktüğünde veya
+  bir hata oluştuğunda hata kaydı (stack trace), cihaz/işletim sistemi bilgisi
+  ve uygulamanın o anki teknik durumu.</li>
+  <li><strong>Tanımlayıcılar:</strong> Firebase, kurulumu ayırt etmek için
+  rastgele bir uygulama-örneği kimliği ve iOS'ta satıcı tanımlayıcısını (IDFV)
+  kullanır. <strong>Reklam kimliği (IDFA) toplanmaz</strong>; uygulamada reklam
+  yoktur ve sizi başka uygulama veya sitelerde izlemeyiz.</li>
+  <li>Ayarlar → <strong>"Kullanım verisi"</strong> anahtarıyla analitiği ve
+  çökme raporunu istediğiniz zaman <strong>kapatabilirsiniz</strong> (opt-out).</li>
+  <li><strong>Tarayıcı (web) sürümünde analitik yoktur</strong> — hiçbir olay
+  toplanmaz veya gönderilmez.</li>
+</ul>
+
+<h2>3. Üçüncü taraflar</h2>
+<p>Mobil analitik/çökme raporu için <strong>Google Firebase</strong> kullanılır;
+kendi
+<a href="https://firebase.google.com/support/privacy">gizlilik koşulları</a> ve
+<a href="https://policies.google.com/privacy">Google Gizlilik Politikası</a>
+geçerlidir. Bunun dışında hiçbir üçüncü tarafla veri paylaşılmaz. Reklam yoktur.</p>
+
+<h2>4. Yerel veriler ve silme</h2>
+<p>Cihazınızdaki tüm oyun verisi uygulamayla birlikte kalır. Uygulamayı
+sildiğinizde bu veriler de silinir. Ayrı bir hesap veya bulut yedeği yoktur.</p>
+
+<h2>5. Çocuklar</h2>
+<p>Uygulama her yaşa uygundur (4+) ve bilerek çocuklardan kişisel veri toplamaz.
+Kimlik bilgisi toplanmaz; yalnızca kimlikle ilişkilendirilmeyen ve
+kapatılabilir teknik istatistikler söz konusudur.</p>
+
+<h2>6. Haklarınız</h2>
+<p>Ad, e-posta veya hesap gibi kimlik bilgileriniz işlenmediğinden tarafımızda
+sizinle eşleştirilebilecek bir kayıt bulunmaz. Kullanım istatistiklerini ve
+çökme raporunu Ayarlar'dan kapatabilir, cihazınızdaki yerel veriyi uygulamayı
+silerek temizleyebilirsiniz. Sorularınız için aşağıdaki adresten
+ulaşabilirsiniz. (KVKK / GDPR kapsamındaki haklarınız saklıdır.)</p>
+
+<h2>7. Değişiklikler</h2>
+<p>Bu politika güncellenebilir; önemli değişikliklerde yukarıdaki "Son
+güncelleme" tarihi değişir ve gerekiyorsa uygulama içinde bilgilendirilirsiniz.</p>
+
+<h2>8. İletişim</h2>
+<p>Sorularınız için:
+<a href="mailto:berkeucvet@gmail.com">berkeucvet@gmail.com</a></p>
+
+<footer>© 2026 Berke Üçvet · <a href="index.html">Ana sayfa</a></footer>
+</main>
+</body>
+</html>
